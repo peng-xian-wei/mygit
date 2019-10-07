@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html； charset="gbk">
+    <title>测试</title>
+    <style>
+div{
+	white-space: nowrap;
+	
+}
+ .divs{
+	border:yellow solid;
+    width:600px;
+    height:300px;
+    
+}
+.divs .div1{
+	 width:100px;
+     height:200px;
+     border:solid;
+   float:left;
+}
+.divs .div2{
+    width:100px;
+    height:200px;
+    border:red solid;
+    float:left;
+}
+.divs .div3{
+   width:100px;
+   height:200px;
+   border:blue solid;
+   float:left;
+}
+
+
+
+ li{
+  background-image:url(images/din.gif);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:40px 40px;
+  text-align:center;
+  line-height:50px;
+  height:50px;
+  width:50px;
+  float:left;
+  margin:10px;
+  list-style:none;
+  border:solid ;
+
+ }
+ li:hover{color:red;}
+ .u li:active{color:green;}
+ .input1:focus{border:red solid 8px;}
+ ul li:first-child{color:blue;}
+ ul li:last-child{color:yellow;}
+ ul li:nth-child(2){font-size:20px;}
+ .message{
+    display:none;
+}
+ .message2{
+  overflow:hidden;
+  background:skyblue;
+  width:200px;
+  height:100px;
+  border:solid;
+  position:fixed;
+  left:200px;
+  display:block;
+  vertical-align:middle;
+  text-align:center;
+  z-index:2;
+}
+
+span:empty{display:block;width:200px;height:100px;background:lightgreen;}
+ input:checked+label{color:red;}
+ 
+</style>
+</head>
+<body>
+
+          
+            <ul class="u">
+                <li onmouseover="this.style.backgroundImage='url(images/sao.gif)'" onmouseout="this.style.backgroundImage='url(images/din.gif)'">one</li>
+                <li onmouseover="this.style.backgroundImage='url(images/sao.gif)'" onmouseout="this.style.backgroundImage='url(images/din.gif)'">two</li>
+                <li onmouseover="this.style.backgroundImage='url(images/sao.gif)'" onmouseout="this.style.backgroundImage='url(images/din.gif)'">three</li>
+            </ul>
+            <input type="text" class="input1">    
+       <p id="p1">信息</p>        
+      <div id="d1" class="message">
+         <span >这是提示信息这是提示信息这是提示信息</span>
+         <span></span>
+      </div>
+      <br><br><br>
+      <input type="radio" name="sex" id="man" value="1" />
+      <label for="man">男</label>
+       <input type="radio" name="sex" id="woman" value="0" checked/>
+       <label for="woman">女</label>
+       <br><br><br>
+      <div class="divs">
+          <div class="div1">
+               <span>aa</span>
+               <span>aa</span>
+               <span>aa</span>
+          </div>
+          <div class="div2">
+              <p>bb</p>
+              <p>bb</p>
+              <p>bb</p>
+          </div>
+          <div class="div3">
+              <span>cc</span>
+              <span>cc</span>
+              <span>cc</span>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <script>
+         var p=document.getElementById("p1");
+         var d=document.getElementById("d1");
+         p.onmouseover=function(){
+               d.className="message2";
+             }
+         p.onmouseout=function(){
+               d.className="message";
+             }
+      </script>
+  
+</body>
+</html>
