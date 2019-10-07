@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+<style>
+    body{
+	   
+    }
+    .banner{
+	    margin-top:120px;
+        height:200px;
+        margin-left:0px;
+    }
+    .banner img{
+        top:400px;
+	    width:600px;
+    	height:200px;
+        z-index:-1;
+        float:left;
+        
+    }
+    .banner #spans{  	
+    	position:relative;
+        left:200px;
+        top:-20px;
+        z-index:1; 
+    }
+    .banner li{
+        border:solid #fff9;
+        margin:auto 10px 10px 10px;
+        width:5px;
+        height:0px;
+        border-radius:2px;
+        cursor: pointer;
+    }
+    .banner ul .on {
+	     border:solid #f009;
+    }
+    .banner ul li{
+    	float:left;
+        margin-left:0px;
+	    list-style: none;
+    }
+    .show{
+	    display: block;
+    }
+    .hidden{
+	    display:none;
+    }
+</style>
